@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShoppingAppArch</string>
+    <string name="category">Category</string>
+    <string name="cart">Cart</string>
+    <string name="maksudul_s_shopping_app">Maksudul\'s Shopping App</string>
+    <string name="maksudulrana_email_com">maksudulrana@email.com</string>
+    <string name="tvTitleText">Title</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_is_category">This is category</string>
+</resources>

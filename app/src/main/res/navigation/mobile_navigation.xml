@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_category">
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.shoppingapparch.ui.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_clothesCategoryFragment"
+            app:destination="@id/nav_cloth_category" />
+        <action
+            android:id="@+id/action_categoryFragment_to_electronicsCategoryFragment"
+            app:destination="@id/nav_electronics_category" />
+        <action
+            android:id="@+id/action_categoryFragment_to_furnitureCategoryFragment"
+            app:destination="@id/nav_furntiture_category" />
+        <action
+            android:id="@+id/action_categoryFragment_to_baverageCategoryFragment"
+            app:destination="@id/nav_baverage_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cloth_category"
+        android:name="com.example.shoppingapparch.ui.clothes.ClothesCategoryFragment"
+        android:label="fragment_clothes_category"
+        tools:layout="@layout/fragment_clothes_category" >
+        <action
+            android:id="@+id/action_clothesCategoryFragment_to_cartFragment"
+            app:destination="@id/nav_cart" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_electronics_category"
+        android:name="com.example.shoppingapparch.ui.electronic.ElectronicsCategoryFragment"
+        android:label="fragment_electronics_category"
+        tools:layout="@layout/fragment_electronics_category" >
+        <action
+            android:id="@+id/action_electronicsCategoryFragment_to_cartFragment"
+            app:destination="@id/nav_cart" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_furntiture_category"
+        android:name="com.example.shoppingapparch.ui.furniture.FurnitureCategoryFragment"
+        android:label="fragment_furniture_category"
+        tools:layout="@layout/fragment_furniture_category" >
+        <action
+            android:id="@+id/action_furnitureCategoryFragment_to_cartFragment"
+            app:destination="@id/nav_cart" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_baverage_category"
+        android:name="com.example.shoppingapparch.ui.baverage.BaverageCategoryFragment"
+        android:label="fragment_baverage_category"
+        tools:layout="@layout/fragment_baverage_category" >
+        <action
+            android:id="@+id/action_baverageCategoryFragment_to_cartFragment"
+            app:destination="@id/nav_cart" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.shoppingapparch.ui.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+</navigation>
